@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estacionamento.css">
+</head>
+<body>
+    <header>
+        <h1>Controle de Estacionamento</h1>
+    </header>
+    <section>
+        <div>
+            <input type="text" name="" id="txtv" placeholder="Informe a placa do veículo">
+            <form>
+                <label for="pagamentos">Formas de pagamento</label>
+                <select name="pagamento" id="pagamento"> 
+                    <option value="" selected disabled>Pagamento </option>
+                    <option value="Pix">Pix</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                  
+                </select>
+            </form>
+            <br>
+            <input type="button" value="Entrada" onclick="calcular()">
+            <input type="button" value="Saída" onclick="calcsaida()">
+        </div>
+        Entrada:<div id="res">
+            
+        </div>
+        Saída:<div id="res1">
+
+          </div>
+    </section>
+    <footer>
+        &copy;Vagas&Comercio
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>
